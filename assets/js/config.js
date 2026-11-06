@@ -5,7 +5,7 @@ window.LETTER_CONFIG = {
   /* Paste the Web App URL from Google Apps Script here (Deploy → Manage
      deployments → Web app URL). Until you do, the site runs in SPECIMEN
      mode: letters are watermarked, unsigned and NOT recorded. */
-  API_URL: "PASTE_YOUR_APPS_SCRIPT_WEB_APP_URL_HERE",
+  API_URL: "https://script.google.com/macros/s/AKfycbxTQ0s_OcL4I2my8fOyP-ASJ8ewEjTfOSAYDM4THMps4b4P0hzVe8O5ybK-hPra8chUuA/exec",
 
   /* Shows the "Access code" box on the student forms. The codes
      themselves live only in the Apps Script (ACCESS_CODES in Code.gs). */
@@ -60,7 +60,7 @@ window.LETTER_CONFIG = {
     introFooter: {
       footer1: "Uganda Martyrs University P. O. Box 44 – Fort Portal – Uganda",
       footer2: "Tel: (+256) 039 2178840/039 3215788",
-      footerEmails: ["assisregistrarfp@umu.ac.ug"]
+      footerEmails: ["deanfeas@umu.ac.ug"]
     }
   }
 };
