@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://challenges.cloudflare.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self'; connect-src 'self' https://script.google.com https://script.googleusercontent.com; frame-src https://challenges.cloudflare.com; object-src 'none'; base-uri 'self'; form-action 'self'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Staff Downloads · FEAS, Uganda Martyrs University</title>
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#13294b">
+  <link rel="icon" href="assets/img/favicon.png">
+  <link rel="preload" href="assets/fonts/Archivo-Variable.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header class="site">
+    <div class="brandbar">
+      <div class="inner bar">
+        <a class="brand" href="index.html">
+          <img src="assets/img/crest.png" alt="Uganda Martyrs University crest" width="52" height="53">
+          <span class="brand-text"><strong>Uganda Martyrs University</strong><span>Faculty of Engineering and Applied Sciences<span class="campus">, Fort Portal Campus</span></span></span>
+        </a>
+        <div class="bar-end">
+          <a class="reveal contact" href="#" data-k="mailto" data-v="Z3UuY2EudW11QHNhZWZuYWVk"><svg class="ico" viewBox="0 0 20 16" aria-hidden="true"><path d="M2 1h16a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zm.8 2.2v.4L10 8.7l7.2-5.1v-.4L10 7.9z" fill="currentColor"/></svg><span>Email the Dean</span></a>
+          <a class="staff" href="index.html">Student pages</a>
+        </div>
+      </div>
+    </div>
+    <div class="goldrule" aria-hidden="true"></div>
+    <div class="band">
+      <div class="inner">
+        <div class="hero">
+          <h1>Class lists and registers</h1>
+          <p>Download the Faculty register as Excel workbooks, with each class on its own sheet.</p>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="layout single">
+    <div class="primary">
+      <form id="login">
+        <label for="key">Staff password</label>
+        <div class="row">
+          <input id="key" type="password" required autocomplete="current-password" placeholder="Your own staff password">
+          <button type="submit">Open</button>
+        </div>
+        <p id="status" class="status" hidden></p>
+      </form>
+
+      <section id="panel" hidden>
+        <h2 style="margin:0 0 4px;color:var(--navy)">Download</h2>
+        <p class="muted small" id="asof" style="margin:0 0 10px"></p>
+        <div class="dl">
+          <button type="button" id="dlPlacements">Confirmed placements by class (.xlsx)
+            <small>Student, company, supervisor and phone, town, district, acceptance letter (with link). Plus a summary, acceptance letters still to collect, and students not yet placed.</small></button>
+          <button type="button" id="dlLetters" class="secondary">Placement and recommendation letters (.xlsx)
+            <small>Every placement letter by class, plus all recommendation letters: student, contacts, reference, date, times verified.</small></button>
+          <button type="button" id="dlProjects" class="secondary">Final-year projects and introductory letters (.xlsx)
+            <small>Project titles and supervisors by course, supervision load, and every introductory letter issued.</small></button>
+          <button type="button" id="refresh" class="secondary">Refresh from the register</button>
+        </div>
+        <h3 style="margin:22px 0 4px;font-size:16px">Summary</h3>
+        <table class="sum" id="sum"></table>
+      </section>
+    </div>
+  </main>
+  <footer class="foot">
+    <div class="inner">
+      <span>Faculty of Engineering and Applied Sciences, Uganda Martyrs University, P. O. Box 44, Fort Portal</span>
+      <span class="foot-contact"><a class="reveal" href="#" data-k="mailto" data-v="Z3UuY2EudW11QHNhZWZuYWVk"><svg class="ico" viewBox="0 0 20 16" aria-hidden="true"><path d="M2 1h16a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zm.8 2.2v.4L10 8.7l7.2-5.1v-.4L10 7.9z" fill="currentColor"/></svg><span>Email the Dean’s office</span></a><a class="reveal" href="#" data-k="tel" data-v="MDc5OTAwOTc3NjUyKw=="><svg class="ico" viewBox="0 0 20 20" aria-hidden="true"><path d="M5.6 1.5l2.6 3.6c.3.5.3 1.1-.1 1.5L6.6 8c1.2 2.4 3 4.2 5.4 5.4l1.4-1.5c.4-.4 1-.5 1.5-.1l3.6 2.6c.5.4.6 1 .3 1.5l-1.3 2.2c-.4.6-1.1.9-1.8.8C8.4 18 2 11.6 1.1 4.3 1 3.6 1.3 2.9 1.9 2.5L4.1 1.2c.5-.3 1.1-.2 1.5.3z" fill="currentColor"/></svg><span>Call the Dean’s office</span></a></span>
+    </div>
+  </footer>
+
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/common.js"></script>
+  <script src="assets/js/export.js"></script>
+</body>
+</html>
